@@ -1,0 +1,8 @@
+@url = https://8080-kauakyoto-games1110-fjhmldxvzye.ws-us116.gitpod.io
+
+POST {{url}}/plataformas
+Content-Type: application/json
+
+{
+    "nome": "xbox"
+}
