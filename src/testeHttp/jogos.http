@@ -1,0 +1,15 @@
+@url = https://8080-kauakyoto-games1110-ez4pa9kb1y7.ws-us116.gitpod.io
+
+GET  {{url}}/jogos
+
+###
+POST {{url}}/jogos
+Content-Type: application/json
+
+{
+    "titulo": "Vampire Survivors",
+    "plataformas": [
+        {"id": 1},
+        {"id": 2}
+    ]
+}
