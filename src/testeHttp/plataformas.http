@@ -1,4 +1,4 @@
-@url = https://8080-kauakyoto-games1110-ez4pa9kb1y7.ws-us116.gitpod.io
+@url = https://8080-kauakyoto-games1110-n4jnkxnlhxq.ws-us116.gitpod.io
 GET {{url}}/plataformas
 
 ###
@@ -6,7 +6,7 @@ POST {{url}}/plataformas
 Content-Type: application/json
 
 {
-    "nome": "XBox"
+    "nome": "PC"
 }
 
 ###
