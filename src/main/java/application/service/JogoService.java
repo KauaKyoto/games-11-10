@@ -31,6 +31,11 @@ public class JogoService {
 
     public JogoDTO update(long id,JogoDTO jogo) {
         Optional<Jogo> result = jogoRepo.findById(id);
+        if(result.isEmpty()) {
+            throw new ResponseStatusException(
+                HttpStatus.NOT_FOUND, "Jogo Não Encontrado"
+            );
+        }
         result.get().setPlataformas(jogo.plataformas());
         result.get().setTitulo(jogo.titulo());
 

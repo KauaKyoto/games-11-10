@@ -35,7 +35,7 @@ public class JogoController {
         jogoSrv.deleteById(id);
     }
 
-    @PutMapping("{/id}")
+    @PutMapping("/{id}")
     public JogoDTO update(@PathVariable long id, @RequestBody JogoDTO jogo){
         return jogoSrv.update(id, jogo);
     }
